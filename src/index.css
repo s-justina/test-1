@@ -17,6 +17,7 @@ body{
   top:0;
   background-color: #EEE;
   z-index: 10;
+  overflow: scroll;
 }
 
 .overlayContent{
@@ -24,4 +25,21 @@ body{
   top:0;
   width: 100%;
   text-align: center;
+}
+
+.styled-select {
+  padding: 0.5rem 1rem;
+  width: 300px;
+  height: 3rem;
+  border-radius: 0.7rem;
+  border:none;
+  background-color: #fff;
+}
+
+.higher{
+  height: 8rem;
+}
+
+.wider{
+  width: 100% !important;
 }

@@ -1,18 +1,20 @@
 import React, { useEffect, useState } from "react";
 import { fetchHeroes } from "./utils/API_network_functions";
 import HeroesList from "./components/HeroesList";
-import AddHeroBtn from "./components/AddHeroBtn";
-import { HeroseI } from "./interfaces";
+import { IHero } from "./interfaces";
 import LoadDataBtn from "./components/LoadDataBtn";
 import Modal from "./components/Modal";
 import AddHeroForm from "./components/AddHeroForm";
+import GreenBtn from "./components/GreenBtn";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faPlus} from "@fortawesome/free-solid-svg-icons";
 const postsPerPage = 5;
-let arrayForHoldingPosts: HeroseI[] = [];
+let arrayForHoldingPosts: IHero[] = [];
 let avocadoAvatar: string = "";
 
 function App() {
-  const [heroes, setHeroes] = useState<HeroseI[]>([]);
-  const [postsToShow, setPostsToShow] = useState<HeroseI[]>([]);
+  const [heroes, setHeroes] = useState<IHero[]>([]);
+  const [postsToShow, setPostsToShow] = useState<IHero[]>([]);
   const [next, setNext] = useState(postsPerPage);
   const [disable, setDisable] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -22,19 +24,18 @@ function App() {
       fetchHeroes()
         .then((res) => {
           const { data } = res.data;
+          debugger
           setTimeout(() => {
             setHeroes(data);
           }, 2000);
-          return data;
+            loopWithSlice(0, postsPerPage, data)
+            const avocado = data.find((hero: IHero) => hero.full_name === "The Avocado");
+            avocadoAvatar = avocado ? avocado.avatar_url : "";
         })
-        .then((heroes) => loopWithSlice(0, postsPerPage, heroes))
         .catch(function (error) {
           console.log("error", error);
         });
     }
-
-    const avocado = heroes.find((hero) => hero.full_name === "The Avocado");
-    avocadoAvatar = avocado ? avocado.avatar_url : "";
   }, []);
   //console.log("heroes", heroes);
   //console.log("postsToShow", postsToShow);
@@ -42,7 +43,7 @@ function App() {
   const loopWithSlice = (
     start: number,
     end: number,
-    fetchedHeroes?: HeroseI[]
+    fetchedHeroes?: IHero[]
   ) => {
     const slicedPosts = fetchedHeroes
       ? fetchedHeroes.slice(start, end)
@@ -82,7 +83,8 @@ function App() {
 
   return (
     <>
-      <AddHeroBtn onClick={toggleModal} />
+      <GreenBtn onClick={toggleModal} > <FontAwesomeIcon icon={faPlus} />
+        <h3>Add hero</h3></GreenBtn>
       <HeroesList heroesToRender={postsToShow} />
       <LoadDataBtn onClick={handleShowMorePosts} disabled={disable} />
       {showModal ? (

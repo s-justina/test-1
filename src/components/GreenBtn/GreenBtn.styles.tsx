@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
-export const AddHeroButton = styled.button`
+export const GreenButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 1rem auto;
-  padding: 0.7rem;
+  padding: 1rem;
   border: 0.5px #fff solid;
   border-radius: 0.5rem;
   width: 90%;
+  height:35px;
   background-color: #9acf88;
   color: #fff;
 

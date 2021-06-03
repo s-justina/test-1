@@ -6,15 +6,17 @@ import {
   StyledField,
   StyledForm,
   StyledLabel,
-  SubmitButton,
   FormSection,
   RandomAvatar,
   ColumnWrapper,
   RowWrapper,
   Text,
 } from "./AddHeroForm.styles";
-import { ErrorMessage, Formik } from "formik";
+import { ErrorMessage, Formik, Field } from "formik";
 import CloseModalBtn from "../CloseModalBtn";
+import GreenBtn from "../GreenBtn";
+import {toast, ToastContainer} from "react-toastify";
+import {addHero} from "../../utils/API_network_functions";
 
 const types = ["red", "green", "blue"];
 
@@ -22,6 +24,7 @@ const AddHeroForm: React.FC<{
   closeModal: () => void;
   avocadoAvatar: string;
 }> = (props) => {
+
   return (
     <>
       <FormSection>
@@ -30,7 +33,6 @@ const AddHeroForm: React.FC<{
             <FormTitle>Add Hero</FormTitle>
             <CloseModalBtn onClick={props.closeModal} />
           </RowWrapper>
-
           <RandomAvatar src={props.avocadoAvatar} alt="Avatar" />
         </ColumnWrapper>
 
@@ -43,53 +45,54 @@ const AddHeroForm: React.FC<{
               type: "",
             }}
             validationSchema={Yup.object({
-              avatar_url: Yup.string().required("Pole wymagane"),
-              full_name: Yup.string().required("Pole wymagane"),
+              avatar_url: Yup.string().required("Is required"),
+              full_name: Yup.string().required("Is required"),
               description: Yup.string()
-                .min(5, "Must be 5 charcaters or more")
+                .min(5, "Must be 5 characters or more")
                 .max(200, "Must be 200 characters or less")
-                .required("Pole wymagane"),
+                .required("Is required"),
               type: Yup.string().required("Please select a type").oneOf(types),
             })}
-            onSubmit={(values) => {
-              console.log("submit!", values);
-              // const { firstName, lastName, city, postalCode } = values;
-              // const dataToSend = {
-              //     first_name: firstName,
-              //     last_name: lastName,
-              //     city,
-              //     zip_code: postalCode,
-              //     order: orderSummary.books,
-              // };
-              // sendOrder(dataToSend)
-              //     .then((res) => {
-              //         const { data } = res.data;
-              //         console.log("response", data);
-              //         toast.success("✔️ Zamówienie zrealizowane pomyślnie!", {
-              //             position: "bottom-center",
-              //             autoClose: 5000,
-              //             hideProgressBar: false,
-              //             closeOnClick: true,
-              //             pauseOnHover: true,
-              //             draggable: true,
-              //             progress: undefined,
-              //         });
-              //     })
-              //     .catch(function (error) {
-              //         console.log("error", error);
-              //         toast.error(
-              //             "❌️Coś poszło nie tak! Spróbuj ponownie później.",
-              //             {
-              //                 position: "bottom-center",
-              //                 autoClose: 5000,
-              //                 hideProgressBar: false,
-              //                 closeOnClick: true,
-              //                 pauseOnHover: true,
-              //                 draggable: true,
-              //                 progress: undefined,
-              //             }
-              //         );
-              //     });
+            onSubmit={({avatar_url,
+                           full_name,
+                           description,
+                           type}) => {
+              const dataToSend = {
+                  avatar_url,
+                  full_name,
+                  description,
+                  type: "ckph4y3o900ah08630hfafi1e"
+              };
+
+              addHero(dataToSend)
+                  .then((res) => {
+                      const { data } = res.data;
+                      console.log("response", res);
+                      toast.success("✔️ Hero added!", {
+                          position: "bottom-center",
+                          autoClose: 5000,
+                          hideProgressBar: false,
+                          closeOnClick: true,
+                          pauseOnHover: true,
+                          draggable: true,
+                          progress: undefined,
+                      });
+                  })
+                  .catch(function (error) {
+                      console.log("error", error);
+                      toast.error(
+                          "❌️Error in add hero!",
+                          {
+                              position: "bottom-center",
+                              autoClose: 5000,
+                              hideProgressBar: false,
+                              closeOnClick: true,
+                              pauseOnHover: true,
+                              draggable: true,
+                              progress: undefined,
+                          }
+                      );
+                  });
             }}
           >
             <StyledForm>
@@ -106,35 +109,36 @@ const AddHeroForm: React.FC<{
               </ErrorMessage>
 
               <StyledLabel htmlFor="type">Type</StyledLabel>
-              <StyledField as="select" name="type">
+              <Field className='styled-select' as="select" name="type">
                 <option value="">Select type</option>
                 <option value="red">Red</option>
                 <option value="green">Green</option>
                 <option value="blue">Blue</option>
-              </StyledField>
+              </Field>
 
               <ErrorMessage name="type">
                 {(msg) => <Text>{msg}</Text>}
               </ErrorMessage>
 
               <StyledLabel htmlFor="description">Description</StyledLabel>
-              <StyledField name="description" type="text" />
+              <Field className='styled-select higher' name="description"  component="textarea"
+                           rows="5" />
               <ErrorMessage name="description">
                 {(msg) => <Text>{msg}</Text>}
               </ErrorMessage>
 
-              <SubmitButton type="submit">Submit</SubmitButton>
-              {/*<ToastContainer*/}
-              {/*    position="bottom-center"*/}
-              {/*    autoClose={5000}*/}
-              {/*    hideProgressBar={false}*/}
-              {/*    newestOnTop={false}*/}
-              {/*    closeOnClick*/}
-              {/*    rtl={false}*/}
-              {/*    pauseOnFocusLoss*/}
-              {/*    draggable*/}
-              {/*    pauseOnHover*/}
-              {/*/>*/}
+              <GreenBtn className='wider' type="submit"><h3>Submit</h3></GreenBtn>
+              <ToastContainer
+                  position="bottom-center"
+                  autoClose={5000}
+                  hideProgressBar={false}
+                  newestOnTop={false}
+                  closeOnClick
+                  rtl={false}
+                  pauseOnFocusLoss
+                  draggable
+                  pauseOnHover
+              />
             </StyledForm>
           </Formik>
         </FormArea>

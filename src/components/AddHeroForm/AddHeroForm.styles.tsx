@@ -22,16 +22,17 @@ export const FormTitle = styled.h3`
 `;
 
 export const RandomAvatar = styled.img`
-transform: scale(0.4);
+  width:5rem;
+  height:5rem;
 `;
 
 export const FormArea = styled.div`
-  margin-top: 3rem;
    display: flex;
    justify-content: center;
 `;
 
 export const StyledForm = styled(Form)`
+  margin-top:1rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -39,7 +40,7 @@ export const StyledForm = styled(Form)`
 
 export const StyledField = styled(Field)`
   padding: 0.5rem 1rem;
-  width: 300px;
+  width: 100%;
   height: 3rem;
   border-radius: 0.7rem;
   border:none;
@@ -57,18 +58,10 @@ export const StyledLabel = styled.label`
 `;
 
 export const Text = styled.p`
-  margin-top: 0.4rem;
-  margin-bottom: 1rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.2rem;
+  margin-left:0.3rem;
   font-style: italic;
   font-size: 0.8rem;
   color: red;
-`;
-
-export const SubmitButton = styled.button`
-  margin-top: 2rem;
-  border-radius: 3px;
-  width: 300px;
-  height: 35px;
-  background-color: #5995ef;
-  color: #fff;
 `;

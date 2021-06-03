@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import { HeroseI } from "../../interfaces";
+import { IHero } from "../../interfaces";
 import {
   Avatar,
   DetailsHero,
@@ -9,7 +9,7 @@ import {
 } from "./HeroesList.styles";
 
 const HeroesList: React.FC<{
-  heroesToRender: HeroseI[];
+  heroesToRender: IHero[];
 }> = ({ heroesToRender }) => {
 
   const renderListOfHeroes = () => {
