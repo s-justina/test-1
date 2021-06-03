@@ -14,6 +14,7 @@
     "@types/react": "^17.0.8",
     "@types/react-dom": "^17.0.5",
     "@types/styled-components": "^5.1.9",
+    "@types/yup": "^0.29.11",
     "axios": "^0.21.1",
     "components-font-awesome": "^5.9.0",
     "formik": "^2.2.9",
@@ -22,7 +23,8 @@
     "react-scripts": "4.0.3",
     "styled-components": "^5.3.0",
     "typescript": "^4.3.2",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^1.1.2",
+    "yup": "^0.32.9"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -27,28 +27,32 @@ transform: scale(0.4);
 
 export const FormArea = styled.div`
   margin-top: 3rem;
+   display: flex;
+   justify-content: center;
 `;
 
 export const StyledForm = styled(Form)`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 `;
 
 export const StyledField = styled(Field)`
   padding: 0.5rem 1rem;
   width: 300px;
-  height: 35px;
-  border: 1px solid #ccc;
+  height: 3rem;
+  border-radius: 0.7rem;
+  border:none;
   background-color: #fff;
 `;
 
 export const StyledLabel = styled.label`
   display: flex;
   flex-direction: column;
-  color: #777;
-  font-size: 0.8em;
-  margin: 0.5em 0;
+  margin: 0.5em 0 0.5em 0.5rem;
+  color: #AAA;
+  font-size: 1rem;
+  font-weight: 700;
   position: relative;
 `;
 
