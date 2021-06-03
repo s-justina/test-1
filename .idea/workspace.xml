@@ -2,18 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b67b1fa-46b2-485e-9bdc-6038de22068e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/actions/heroes.actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/heroes.reducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/root.reducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/store.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AddHeroBtn/AddHeroBtn.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GreenBtn/GreenBtn.styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AddHeroBtn/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GreenBtn/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AddHeroForm/AddHeroForm.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddHeroForm/AddHeroForm.styles.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/AddHeroForm/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddHeroForm/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeroesList/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroesList/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/API_network_functions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/API_network_functions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +20,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="s-justina &lt;jus.sobcz@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1tMBvsjSoHFjHqfzKDbDze1rf08" />
@@ -44,6 +48,7 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\s-jus\AppData\Roaming\npm\node_modules\prettier" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="ts.external.directory.path" value="C:\Users\wojci\WebstormProjects\netgutu-heroes\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -77,7 +82,7 @@
       <workItem from="1622720585830" duration="200000" />
       <workItem from="1622720807985" duration="7000" />
       <workItem from="1622722498973" duration="14146000" />
-      <workItem from="1622738720235" duration="9102000" />
+      <workItem from="1622738720235" duration="15515000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1622730689295</created>
@@ -86,14 +91,37 @@
       <option name="project" value="LOCAL" />
       <updated>1622730689296</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update add hero form">
+      <created>1622749497478</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1622749497478</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="update add hero form" />
+    <option name="LAST_COMMIT_MESSAGE" value="update add hero form" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
