@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b67b1fa-46b2-485e-9bdc-6038de22068e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/actions/heroes.actions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/heroes.reducer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/root.reducer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Home/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AddHeroForm/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddHeroForm/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HeroesList/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroesList/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +77,7 @@
       <workItem from="1622720585830" duration="200000" />
       <workItem from="1622720807985" duration="7000" />
       <workItem from="1622722498973" duration="14146000" />
-      <workItem from="1622738720235" duration="15515000" />
+      <workItem from="1622738720235" duration="17814000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1622730689295</created>
@@ -98,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622749497478</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="finish add hero form">
+      <created>1622756269979</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1622756269979</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,7 +120,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="update add hero form" />
-    <option name="LAST_COMMIT_MESSAGE" value="update add hero form" />
+    <MESSAGE value="finish add hero form" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish add hero form" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import { useHistory } from "react-router-dom";
 import { IHero } from "../../interfaces";
 import {
   Avatar,
@@ -11,11 +12,16 @@ import {
 const HeroesList: React.FC<{
   heroesToRender: IHero[];
 }> = ({ heroesToRender }) => {
+  const history = useHistory()
+
+  const onHeroClick = (heroID: string) => {
+    history.push(`heroes/${heroID}`)
+  }
 
   const renderListOfHeroes = () => {
     return heroesToRender.map((hero) => {
       return (
-        <HeroContainer key={hero.id}>
+        <HeroContainer onClick={() => onHeroClick(hero.id)} key={hero.id}>
           <IntroHero>
             <Avatar src={hero.avatar_url} alt={hero.full_name + " avatar"} />
             <DetailsHero>
