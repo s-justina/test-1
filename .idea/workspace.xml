@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b67b1fa-46b2-485e-9bdc-6038de22068e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Home/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/HeroDetails/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeroesList/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroesList/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/heroes.actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/heroes.actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/heroes.reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/heroes.reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/root.reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/root.reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/API_network_functions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/API_network_functions.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +26,14 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1tMBvsjSoHFjHqfzKDbDze1rf08" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -77,7 +90,8 @@
       <workItem from="1622720585830" duration="200000" />
       <workItem from="1622720807985" duration="7000" />
       <workItem from="1622722498973" duration="14146000" />
-      <workItem from="1622738720235" duration="17814000" />
+      <workItem from="1622738720235" duration="17899000" />
+      <workItem from="1622785228469" duration="5341000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1622730689295</created>
@@ -100,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622756269979</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add basic routing">
+      <created>1622758601030</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1622758601030</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,12 +137,14 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="update add hero form" />
     <MESSAGE value="finish add hero form" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish add hero form" />
+    <MESSAGE value="add basic routing" />
+    <option name="LAST_COMMIT_MESSAGE" value="add basic routing" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

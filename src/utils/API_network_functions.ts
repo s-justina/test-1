@@ -8,3 +8,7 @@ export const fetchHeroes = async () => {
 export const addHero = async (heroData: any) => {
     return await axios.post("http://localhost:4000/heroes", heroData);
 }
+
+export const deleteHero = async ({id}: IHero) => {
+    return await axios.delete(`http://localhost:4000/heroes/${id}`);
+}

@@ -1,18 +1,17 @@
-import React, {useEffect, useState} from "react";
-import { createBrowserHistory } from "history";
-import { Route, Router, Switch } from "react-router-dom";
+import React from "react";
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import HeroDetails from "./components/HeroDetails";
 import Home from "./components/Home";
-const history = createBrowserHistory();
 
 function App() {
     return (
-        <Router history={history}>
+        <Router>
             <Switch>
                 <Route exact path="/">
                     <Home/>
                 </Route>
                 <Route path="/heroes/:id">
-                    <h1>Hero details</h1>
+                    <HeroDetails/>
                 </Route>
             </Switch>
         </Router>
