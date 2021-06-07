@@ -2,17 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b67b1fa-46b2-485e-9bdc-6038de22068e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/HeroDetails/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/HeroDetails/HeroDetails.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actions/heroes.actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/heroes.actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AddHeroForm/AddHeroForm.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddHeroForm/AddHeroForm.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AddHeroForm/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddHeroForm/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HeroDetails/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroDetails/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HeroesList/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroesList/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/heroes.reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/heroes.reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/root.reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/root.reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/API_network_functions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/API_network_functions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LoadDataBtn/LoadDataBtn.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoadMoreHeroesBtn/LoadDataBtn.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LoadDataBtn/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoadMoreHeroesBtn/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +50,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../barcode-mvp" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -55,7 +59,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\s-jus\AppData\Roaming\npm\node_modules\prettier" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\wojci\WebstormProjects\netgutu-heroes\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="ts.external.directory.path" value="C:\Users\wojci\WebstormProjects\netgutu-heroes\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -91,7 +95,8 @@
       <workItem from="1622720807985" duration="7000" />
       <workItem from="1622722498973" duration="14146000" />
       <workItem from="1622738720235" duration="17899000" />
-      <workItem from="1622785228469" duration="5341000" />
+      <workItem from="1622785228469" duration="5456000" />
+      <workItem from="1623092649639" duration="7978000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1622730689295</created>
@@ -121,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622758601030</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add hero details page">
+      <created>1622790711298</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1622790711298</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,7 +156,8 @@
     <MESSAGE value="update add hero form" />
     <MESSAGE value="finish add hero form" />
     <MESSAGE value="add basic routing" />
-    <option name="LAST_COMMIT_MESSAGE" value="add basic routing" />
+    <MESSAGE value="add hero details page" />
+    <option name="LAST_COMMIT_MESSAGE" value="add hero details page" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

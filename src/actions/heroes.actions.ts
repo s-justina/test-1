@@ -1,12 +1,11 @@
 import {IHero} from "../interfaces";
 
 export enum HeroesActionName {
-    ADD_FETCHED_HEROES='ADD_FETCHED_HEROES',
-    ADD_CREATED_HERO='ADD_CREATED_HERO',
-    REMOVE_DELETED_HERO='REMOVE_DELETED_HERO',
-    SET_HERO_LIST='SET_HERO_LIST',
-    DISPLAY_MORE_HEROES='DISPLAY_MORE_HEROES',
-    RESET_HEROES_LIST_TO_DISPLAY='RESET_HEROES_LIST_TO_DISPLAY'
+    ADD_FETCHED_HEROES = 'ADD_FETCHED_HEROES',
+    ADD_CREATED_HERO = 'ADD_CREATED_HERO',
+    REMOVE_DELETED_HERO = 'REMOVE_DELETED_HERO',
+    DISPLAY_MORE_HEROES = 'DISPLAY_MORE_HEROES',
+    RESET_HEROES_LIST_TO_DISPLAY = 'RESET_HEROES_LIST_TO_DISPLAY'
 }
 
 export const displayMoreHeroes = () => {
@@ -16,10 +15,10 @@ export const displayMoreHeroes = () => {
 }
 
 export const addFetchedHeroes = (heroes: IHero[]) => {
-   return {
-       type: HeroesActionName.ADD_FETCHED_HEROES,
-       payload: heroes
-   }
+    return {
+        type: HeroesActionName.ADD_FETCHED_HEROES,
+        payload: heroes
+    }
 };
 
 export const addCreatedHero = (hero: IHero) => {
@@ -33,12 +32,5 @@ export const removeHero = (hero: IHero) => {
     return {
         type: HeroesActionName.REMOVE_DELETED_HERO,
         payload: hero
-    }
-}
-
-export const setHeroList = (heroes: IHero[]) => {
-    return {
-        type: HeroesActionName.SET_HERO_LIST,
-        payload: heroes
     }
 }

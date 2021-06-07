@@ -20,15 +20,17 @@ import {addHero} from "../../utils/API_network_functions";
 import {useDispatch, useSelector} from "react-redux";
 import {addCreatedHero} from "../../actions/heroes.actions";
 import {AppState} from "../../reducers/root.reducer";
-import {IHeroType} from "../../interfaces";
+import {IHero, IHeroType} from "../../interfaces";
+import {HeroesState} from "../../reducers/heroes.reducer";
 
 const AddHeroForm: React.FC<{
     closeModal: () => void;
-    avocadoAvatar: string;
 }> = (props) => {
     const dispatch = useDispatch()
     const heroTypes = useSelector<AppState, IHeroType[]>(state => state.heroTypes)
-
+    const heroes = useSelector<AppState, HeroesState>(state => state.heroes)
+    const avocado = heroes.heroesList.find((hero: IHero) => hero.full_name === "The Avocado");
+    const avocadoAvatar = avocado ? avocado.avatar_url : "";
     const options = heroTypes.map((heroType) => {
         return <option value={heroType.id}>{heroType.name}</option>
     })
@@ -41,7 +43,7 @@ const AddHeroForm: React.FC<{
                         <FormTitle>Add Hero</FormTitle>
                         <CloseModalBtn onClick={props.closeModal}/>
                     </RowWrapper>
-                    <RandomAvatar src={props.avocadoAvatar} alt="Avatar"/>
+                    <RandomAvatar src={avocadoAvatar} alt="Avatar"/>
                 </ColumnWrapper>
 
                 <FormArea>

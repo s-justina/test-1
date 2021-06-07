@@ -1,7 +1,7 @@
 import React from "react";
 import { LoadMoreButton } from "./LoadDataBtn.styles";
 
-const LoadDataBtn: React.FC<{ onClick: () => void; disabled: boolean }> = (
+const LoadMoreHeroesBtn: React.FC<{ onClick: () => void; disabled: boolean }> = (
   props
 ) => {
   return (
@@ -11,4 +11,4 @@ const LoadDataBtn: React.FC<{ onClick: () => void; disabled: boolean }> = (
   );
 };
 
-export default LoadDataBtn;
+export default LoadMoreHeroesBtn;
