@@ -3,12 +3,10 @@ import { useParams } from "react-router";
 import { useDispatch, useSelector } from "react-redux";
 import { AppState } from "../../reducers/root.reducer";
 import { HeroesState } from "../../reducers/heroes.reducer";
-import { FormTitle, RandomAvatar } from "../AddHeroForm/AddHeroForm.styles";
 import { useHistory } from "react-router-dom";
 import { removeHero } from "../../actions/heroes.actions";
 import { deleteHero } from "../../utils/API_network_functions";
 import Modal from "../Modal";
-import Home from "../Home";
 import {
   BtnTxt,
   CloseBtnPosition,
@@ -23,7 +21,7 @@ import {
 } from "./HeroDetails.styles";
 import CloseModalBtn from "../CloseModalBtn";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus, faTrash } from "@fortawesome/free-solid-svg-icons";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
 const HeroDetails = () => {
   const { id } = useParams<{
@@ -38,6 +36,7 @@ const HeroDetails = () => {
   const heroToDisplay = heroesList.find((hero) => hero.id === id);
 
   if (!heroToDisplay) {
+    history.push("/error");
     return null;
   }
 
@@ -52,7 +51,6 @@ const HeroDetails = () => {
 
   return (
     <>
-      <Home />
       <Modal>
         <ColumnWrapper>
           <CloseBtnPosition>
