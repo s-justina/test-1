@@ -35,6 +35,10 @@ const HeroDetails = () => {
   );
   const heroToDisplay = heroesList.find((hero) => hero.id === id);
 
+  if (heroesList.length === 0) {
+    return null;
+  }
+
   if (!heroToDisplay) {
     history.push("/error");
     return null;
