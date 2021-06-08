@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b67b1fa-46b2-485e-9bdc-6038de22068e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/components/Home/Home.test.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/reducers/heroes.reducer.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/heroes.actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/heroes.actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LoadMoreHeroesBtn/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoadMoreHeroesBtn/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/heroes.reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/heroes.reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623105528594</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add tests">
+      <created>1623186652907</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1623186652908</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,13 +263,18 @@
     <MESSAGE value="end heroes detailes section" />
     <MESSAGE value="error component" />
     <MESSAGE value="correct routing" />
-    <option name="LAST_COMMIT_MESSAGE" value="correct routing" />
+    <MESSAGE value="add tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="add tests" />
   </component>
   <component name="WindowStateProjectService">
     <state x="438" y="0" key="#xdebugger.evaluate" timestamp="1623186313870">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="438" y="0" key="#xdebugger.evaluate/0.0.1366.768@0.0.1366.768" timestamp="1623186313870" />
+    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1623186651653">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1623186651653" />
     <state width="1345" height="367" key="GridCell.Tab.0.bottom" timestamp="1623186379623">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -322,6 +327,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="184" y="26" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1623184357974" />
+    <state x="275" y="112" key="Vcs.Push.Dialog.v2" timestamp="1623186656134">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="275" y="112" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1623186656134" />
     <state x="369" y="100" width="627" height="568" key="find.popup" timestamp="1623185459032">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
