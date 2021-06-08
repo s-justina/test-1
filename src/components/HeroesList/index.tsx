@@ -7,16 +7,18 @@ import {
   HeroContainer,
   HeroDescription,
   IntroHero,
+  Name,
+  Type,
 } from "./HeroesList.styles";
 
 const HeroesList: React.FC<{
   heroesToRender: IHero[];
 }> = ({ heroesToRender }) => {
-  const history = useHistory()
+  const history = useHistory();
 
   const onHeroClick = (heroID: string) => {
-    history.push(`heroes/${heroID}`)
-  }
+    history.push(`heroes/${heroID}`);
+  };
 
   const renderListOfHeroes = () => {
     return heroesToRender.map((hero) => {
@@ -25,8 +27,8 @@ const HeroesList: React.FC<{
           <IntroHero>
             <Avatar src={hero.avatar_url} alt={hero.full_name + " avatar"} />
             <DetailsHero>
-              <h3>{hero.full_name}</h3>
-              <p>{hero.type.name}</p>
+              <Name>{hero.full_name}</Name>
+              <Type>{hero.type.name}</Type>
             </DetailsHero>
           </IntroHero>
           <HeroDescription>{hero.description}</HeroDescription>
@@ -37,7 +39,7 @@ const HeroesList: React.FC<{
 
   return (
     <>
-      <div>{renderListOfHeroes()}</div>
+      <div style={{ marginBottom: "5rem" }}>{renderListOfHeroes()}</div>
     </>
   );
 };

@@ -9,11 +9,17 @@ export const GreenButton = styled.button`
   border: 0.5px #fff solid;
   border-radius: 0.5rem;
   width: 90%;
-  height:35px;
+  height: 35px;
   background-color: #9acf88;
   color: #fff;
 
   & h3 {
     padding-left: 1rem;
+  }
+
+  @media (min-width: 700px) {
+    margin: 1rem 2rem 1rem 5%;
+    padding: 1.5rem 1rem;
+    width: 8rem;
   }
 `;

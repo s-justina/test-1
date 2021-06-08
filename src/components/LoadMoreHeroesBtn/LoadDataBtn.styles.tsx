@@ -11,4 +11,9 @@ export const LoadMoreButton = styled.button`
   width: 50%;
   background-color: #56acda;
   color: #fff;
+
+  @media (min-width: 700px) {
+    padding: 1rem 1rem;
+    width: 15rem;
+  }
 `;

@@ -125,7 +125,7 @@ const AddHeroForm: React.FC<{
               </ErrorMessage>
 
               <GreenBtn className="wider" type="submit">
-                <h3>Submit</h3>
+                <h3>Save</h3>
               </GreenBtn>
             </StyledForm>
           </Formik>

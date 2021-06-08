@@ -38,7 +38,7 @@ export const HeroName = styled.p`
 
 export const HeroDescription = styled.p`
   text-align: justify;
-  text-justify: inter-word;
+  text-align-last: center;
 `;
 
 export const DeleteBtnPosition = styled.div`
