@@ -52,6 +52,7 @@ const Home = () => {
   if (heroesList.length === 0) {
     return (
       <div
+          id={'spinner'}
         style={{
           position: "absolute",
           top: "50%",
