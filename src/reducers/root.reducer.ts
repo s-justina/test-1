@@ -3,9 +3,8 @@ import {IHero, IHeroType} from "../interfaces";
 import heroesReducers, {HeroesState} from './heroes.reducer'
 
 export interface AppState {
-    heroes: HeroesState;
-    heroTypes: IHeroType[]
-
+  heroes: HeroesState;
+  heroTypes: IHeroType[];
 }
 
 export const rootReducer = combineReducers<AppState>({

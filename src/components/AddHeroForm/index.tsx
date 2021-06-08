@@ -35,7 +35,11 @@ const AddHeroForm: React.FC<{
   );
   const avocadoAvatar = avocado ? avocado.avatar_url : "";
   const options = heroTypes.map((heroType) => {
-    return <option value={heroType.id}>{heroType.name}</option>;
+    return (
+      <option key={heroType.id} value={heroType.id}>
+        {heroType.name}
+      </option>
+    );
   });
 
   return (

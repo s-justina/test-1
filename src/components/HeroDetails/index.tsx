@@ -58,7 +58,13 @@ const HeroDetails = () => {
       <Modal>
         <ColumnWrapper>
           <CloseBtnPosition>
-            <CloseModalBtn onClick={() => history.push("/")} />
+            <CloseModalBtn
+              onClick={() =>
+                history.push("/", {
+                  hideHeroDetailsModal: true,
+                })
+              }
+            />
           </CloseBtnPosition>
 
           <HeroDedailPosition>

@@ -3,15 +3,23 @@
   <component name="ChangeListManager">
     <list default="true" id="2b67b1fa-46b2-485e-9bdc-6038de22068e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AddHeroForm/AddHeroForm.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddHeroForm/AddHeroForm.styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CloseModalBtn/CloseModalBtn.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CloseModalBtn/CloseModalBtn.styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GreenBtn/GreenBtn.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GreenBtn/GreenBtn.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AddHeroForm/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddHeroForm/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CloseModalBtn/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CloseModalBtn/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ErrorComponent/ErrorComponent.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ErrorComponent/ErrorComponent.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GreenBtn/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GreenBtn/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/HeroDetails/HeroDetails.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroDetails/HeroDetails.styles.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/HeroDetails/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroDetails/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeroesList/HeroesList.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroesList/HeroesList.styles.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LoadMoreHeroesBtn/LoadDataBtn.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoadMoreHeroesBtn/LoadDataBtn.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LoadMoreHeroesBtn/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoadMoreHeroesBtn/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Modal/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Modal/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/heroes.reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/heroes.reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/root.reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/root.reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/components/Home/Home.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/components/Home/Home.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/reducers/heroes.reducer.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/reducers/heroes.reducer.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/API_network_functions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/API_network_functions.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +60,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\wojci\WebstormProjects\netgutu-heroes\node_modules\prettier" />
@@ -64,7 +73,20 @@
       <recent name="C:\Users\wojci\WebstormProjects\netgutu-heroes\src\components\OptionalTableTitle" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.npm start">
+  <component name="RunManager" selected="Jest.&lt;Home&gt;">
+    <configuration name="&lt;Home&gt;" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/test/components/Home/Home.test.tsx" />
+      <test-names>
+        <test-name value="&lt;Home&gt;" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
@@ -78,6 +100,11 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.&lt;Home&gt;" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -97,7 +124,7 @@
       <workItem from="1622738720235" duration="17899000" />
       <workItem from="1622785228469" duration="5456000" />
       <workItem from="1623092649639" duration="12694000" />
-      <workItem from="1623172008303" duration="14696000" />
+      <workItem from="1623172008303" duration="16862000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1622730689295</created>
@@ -162,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623182775985</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="update app styles">
+      <created>1623186932521</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1623186932521</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,7 +224,8 @@
     <MESSAGE value="error component" />
     <MESSAGE value="correct routing" />
     <MESSAGE value="style" />
-    <option name="LAST_COMMIT_MESSAGE" value="style" />
+    <MESSAGE value="update app styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="update app styles" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,7 +1,4 @@
-import {
-  heroesInitialState,
-  heroes,
-} from "../../reducers/heroes.reducer";
+import { heroesInitialState, heroes } from "../../reducers/heroes.reducer";
 import { HeroesActionName } from "../../actions/heroes.actions";
 
 export const mockHeroesList = [

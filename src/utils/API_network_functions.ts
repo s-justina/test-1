@@ -1,14 +1,14 @@
 import axios from "axios";
-import {IHero} from "../interfaces";
+import { IHero } from "../interfaces";
 
 export const fetchHeroes = async () => {
-    return await axios.get("http://localhost:4000/heroes");
+  return await axios.get("http://localhost:4000/heroes");
 };
 
 export const addHero = async (heroData: any) => {
-    return await axios.post("http://localhost:4000/heroes", heroData);
-}
+  return await axios.post("http://localhost:4000/heroes", heroData);
+};
 
-export const deleteHero = async ({id}: IHero) => {
-    return await axios.delete(`http://localhost:4000/heroes/${id}`);
-}
+export const deleteHero = async ({ id }: IHero) => {
+  return await axios.delete(`http://localhost:4000/heroes/${id}`);
+};

@@ -16,6 +16,7 @@ import AddHeroForm from "../AddHeroForm";
 import { HeroesState } from "../../reducers/heroes.reducer";
 import Spinner from "../Spinner";
 import OptionalTableTitle from "../OptionalTableTitle";
+import { useParams, useLocation } from "react-router";
 
 const Home = () => {
   const { heroesListToDisplay, heroesList, currentPage, perPage } = useSelector<
@@ -23,7 +24,13 @@ const Home = () => {
     HeroesState
   >((state) => state.heroes);
   const [showModal, setShowModal] = useState(false);
+  const [showHeroDetailsModal, setShowHeroDetailsModal] = useState(false);
   const dispatch = useDispatch();
+  const { id } = useParams<{
+    id: string;
+  }>();
+
+  const location = useLocation();
 
   useEffect(() => {
     if (heroesList.length === 0) {
@@ -52,7 +59,7 @@ const Home = () => {
   if (heroesList.length === 0) {
     return (
       <div
-          id={'spinner'}
+        id={"spinner"}
         style={{
           position: "absolute",
           top: "50%",
@@ -65,11 +72,19 @@ const Home = () => {
     );
   }
 
+  if (id && !showHeroDetailsModal) {
+    setShowHeroDetailsModal(true);
+  }
+
+  if (showHeroDetailsModal && location.state?.hideHeroDetailsModal) {
+    setShowHeroDetailsModal(false);
+  }
+
   return (
     <div
       style={{
-        pointerEvents: showModal ? "none" : "all",
-        filter: showModal ? "blur(0.5px)" : undefined,
+        pointerEvents: showModal || showHeroDetailsModal ? "none" : "all",
+        filter: showModal || showHeroDetailsModal ? "blur(0.5px)" : undefined,
         minHeight: "100vh",
         overflow: "auto",
       }}
@@ -85,7 +100,7 @@ const Home = () => {
         onClick={handleShowMorePosts}
         disabled={currentPage * perPage >= heroesList.length}
       />
-      {showModal ? (
+      {showModal || showHeroDetailsModal ? (
         <div
           style={{
             position: "fixed",

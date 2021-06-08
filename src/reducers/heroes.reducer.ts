@@ -99,8 +99,8 @@ export const heroTypes = (
 };
 
 const heroesReducers = {
-  heroes,
-  heroTypes,
+    heroes,
+    heroTypes,
 };
 
 export default heroesReducers;
