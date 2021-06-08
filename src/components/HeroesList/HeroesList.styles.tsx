@@ -15,6 +15,7 @@ export const HeroContainer = styled.div`
     flex-direction: row;
     align-items: center;
     min-height: 5rem;
+    cursor: pointer;
   }
 `;
 

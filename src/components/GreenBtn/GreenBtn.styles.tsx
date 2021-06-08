@@ -12,14 +12,19 @@ export const GreenButton = styled.button`
   height: 35px;
   background-color: #9acf88;
   color: #fff;
+  transition: 0.3s;
 
   & h3 {
     padding-left: 1rem;
   }
 
   @media (min-width: 700px) {
-    margin: 1rem 2rem 1rem 5%;
     padding: 1.5rem 1rem;
     width: 8rem;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 `;

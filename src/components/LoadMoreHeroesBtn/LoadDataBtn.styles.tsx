@@ -11,9 +11,15 @@ export const LoadMoreButton = styled.button`
   width: 50%;
   background-color: #56acda;
   color: #fff;
+  transition: 0.3s;
 
   @media (min-width: 700px) {
     padding: 1rem 1rem;
     width: 15rem;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 `;

@@ -69,10 +69,11 @@ const Home = () => {
       style={{
         pointerEvents: showModal ? "none" : "all",
         filter: showModal ? "blur(0.5px)" : undefined,
-        height: "100vh",
+        minHeight: "100vh",
+        overflow: "auto",
       }}
     >
-      <GreenBtn onClick={toggleModal}>
+      <GreenBtn className="left-position" onClick={toggleModal}>
         {" "}
         <FontAwesomeIcon icon={faPlus} />
         <h3>Add hero</h3>

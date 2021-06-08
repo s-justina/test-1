@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b67b1fa-46b2-485e-9bdc-6038de22068e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/OptionalTableTitle/OptionalTableTitle.styles.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/OptionalTableTitle/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Spinner/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AddHeroForm/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddHeroForm/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AddHeroForm/AddHeroForm.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddHeroForm/AddHeroForm.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CloseModalBtn/CloseModalBtn.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CloseModalBtn/CloseModalBtn.styles.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/GreenBtn/GreenBtn.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GreenBtn/GreenBtn.styles.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/HeroDetails/HeroDetails.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroDetails/HeroDetails.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HeroDetails/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroDetails/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/HeroesList/HeroesList.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroesList/HeroesList.styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeroesList/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroesList/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/LoadMoreHeroesBtn/LoadDataBtn.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoadMoreHeroesBtn/LoadDataBtn.styles.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
@@ -101,7 +97,7 @@
       <workItem from="1622738720235" duration="17899000" />
       <workItem from="1622785228469" duration="5456000" />
       <workItem from="1623092649639" duration="12694000" />
-      <workItem from="1623172008303" duration="10620000" />
+      <workItem from="1623172008303" duration="14696000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1622730689295</created>
@@ -159,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623105528594</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="style">
+      <created>1623182775985</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1623182775985</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,7 +189,8 @@
     <MESSAGE value="end heroes detailes section" />
     <MESSAGE value="error component" />
     <MESSAGE value="correct routing" />
-    <option name="LAST_COMMIT_MESSAGE" value="correct routing" />
+    <MESSAGE value="style" />
+    <option name="LAST_COMMIT_MESSAGE" value="style" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

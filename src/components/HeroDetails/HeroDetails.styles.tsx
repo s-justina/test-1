@@ -50,6 +50,14 @@ export const DeleteBtn = styled.div`
   padding: 1rem;
   width: 10rem;
   color: #d22b2b;
+  transition: 0.3s;
+
+  @media (min-width: 700px) {
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+    }
+  }
 `;
 
 export const BtnTxt = styled.span`

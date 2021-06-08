@@ -4,6 +4,7 @@ import { Field, Form } from "formik";
 export const ColumnWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  width: 18rem;
 `;
 
 export const RowWrapper = styled.div`
@@ -11,7 +12,10 @@ export const RowWrapper = styled.div`
   justify-content: space-between;
 `;
 
-export const FormSection = styled(ColumnWrapper)`
+export const FormSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 1rem;
 `;
 
@@ -30,16 +34,16 @@ export const FormArea = styled.div`
 `;
 
 export const StyledForm = styled(Form)`
-  margin-top: 1rem;
+  margin-top: 0.2rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 `;
 
 export const StyledField = styled(Field)`
-  padding: 0.5rem 1rem;
+  padding: 0.3rem 1rem;
   width: 100%;
-  height: 3rem;
+  height: 2rem;
   border-radius: 0.7rem;
   border: none;
   background-color: #fff;
@@ -48,7 +52,7 @@ export const StyledField = styled(Field)`
 export const StyledLabel = styled.label`
   display: flex;
   flex-direction: column;
-  margin: 0.5em 0 0.5em 0.5rem;
+  margin: 0.3em 0 0.3em 0.5rem;
   color: #aaa;
   font-size: 1rem;
   font-weight: 700;
