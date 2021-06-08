@@ -2,20 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b67b1fa-46b2-485e-9bdc-6038de22068e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/OptionalTableTitle/OptionalTableTitle.styles.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/OptionalTableTitle/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Spinner/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/components/Home/Home.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/reducers/heroes.reducer.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AddHeroForm/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddHeroForm/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GreenBtn/GreenBtn.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GreenBtn/GreenBtn.styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeroDetails/HeroDetails.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroDetails/HeroDetails.styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeroesList/HeroesList.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroesList/HeroesList.styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeroesList/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeroesList/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/heroes.actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/heroes.actions.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LoadMoreHeroesBtn/LoadDataBtn.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoadMoreHeroesBtn/LoadDataBtn.styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LoadMoreHeroesBtn/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoadMoreHeroesBtn/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/heroes.reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/heroes.reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,9 +51,11 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\wojci\WebstormProjects\netgutu-heroes\node_modules\prettier" />
+    <property name="prettierjs.PrettierConfiguration.NodeInterpreter" value="project" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\s-jus\WebstormProjects\netguru-heroes-app\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="ts.external.directory.path" value="C:\Users\wojci\WebstormProjects\netgutu-heroes\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -68,7 +65,77 @@
       <recent name="C:\Users\wojci\WebstormProjects\netgutu-heroes\src\components\OptionalTableTitle" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.npm start">
+  <component name="RunManager" selected="Jest.&lt;Home&gt;.should call displayMoreHeroes on load more button press">
+    <configuration name="&lt;Cart&gt;.should call displayMoreHeroes on load more button press" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/test/components/Home/Home.test.tsx" />
+      <test-names>
+        <test-name value="&lt;Cart&gt;" />
+        <test-name value="should call displayMoreHeroes on load more button press" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="&lt;Home&gt;.should call displayMoreHeroes on load more button press" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/test/components/Home/Home.test.tsx" />
+      <test-names>
+        <test-name value="&lt;Home&gt;" />
+        <test-name value="should call displayMoreHeroes on load more button press" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="heroes tests.should return correct state on DISPLAY_MORE_HEROES action call" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/test/reducers/heroes.reducer.test.ts" />
+      <test-names>
+        <test-name value="heroes tests" />
+        <test-name value="should return correct state on DISPLAY_MORE_HEROES action call" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="heroes tests.should return correct state on REMOVE_DELETED_HERO action call" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/test/reducers/heroes.reducer.test.ts" />
+      <test-names>
+        <test-name value="heroes tests" />
+        <test-name value="should return correct state on REMOVE_DELETED_HERO action call" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="heroes tests.should return correct state on RESET_HEROES_LIST_TO_DISPLAY action call" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/test/reducers/heroes.reducer.test.ts" />
+      <test-names>
+        <test-name value="heroes tests" />
+        <test-name value="should return correct state on RESET_HEROES_LIST_TO_DISPLAY action call" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
@@ -82,8 +149,17 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.&lt;Home&gt;.should call displayMoreHeroes on load more button press" />
+        <item itemvalue="Jest.&lt;Cart&gt;.should call displayMoreHeroes on load more button press" />
+        <item itemvalue="Jest.heroes tests.should return correct state on RESET_HEROES_LIST_TO_DISPLAY action call" />
+        <item itemvalue="Jest.heroes tests.should return correct state on DISPLAY_MORE_HEROES action call" />
+        <item itemvalue="Jest.heroes tests.should return correct state on REMOVE_DELETED_HERO action call" />
+      </list>
+    </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -170,12 +246,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
@@ -187,6 +264,68 @@
     <MESSAGE value="error component" />
     <MESSAGE value="correct routing" />
     <option name="LAST_COMMIT_MESSAGE" value="correct routing" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="438" y="0" key="#xdebugger.evaluate" timestamp="1623186313870">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="438" y="0" key="#xdebugger.evaluate/0.0.1366.768@0.0.1366.768" timestamp="1623186313870" />
+    <state width="1345" height="367" key="GridCell.Tab.0.bottom" timestamp="1623186379623">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1345" height="367" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1623186379623" />
+    <state width="1345" height="367" key="GridCell.Tab.0.center" timestamp="1623186379623">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1345" height="367" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1623186379623" />
+    <state width="1345" height="367" key="GridCell.Tab.0.left" timestamp="1623186379622">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1345" height="367" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1623186379622" />
+    <state width="1345" height="367" key="GridCell.Tab.0.right" timestamp="1623186379623">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1345" height="367" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1623186379623" />
+    <state width="1345" height="367" key="GridCell.Tab.1.bottom" timestamp="1623186379624">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1345" height="367" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1623186379624" />
+    <state width="1345" height="367" key="GridCell.Tab.1.center" timestamp="1623186379623">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1345" height="367" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1623186379623" />
+    <state width="1345" height="367" key="GridCell.Tab.1.left" timestamp="1623186379623">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1345" height="367" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1623186379623" />
+    <state width="1345" height="367" key="GridCell.Tab.1.right" timestamp="1623186379624">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1345" height="367" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1623186379624" />
+    <state width="1345" height="367" key="GridCell.Tab.2.bottom" timestamp="1623186379624">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1345" height="367" key="GridCell.Tab.2.bottom/0.0.1366.768@0.0.1366.768" timestamp="1623186379624" />
+    <state width="1345" height="367" key="GridCell.Tab.2.center" timestamp="1623186379624">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1345" height="367" key="GridCell.Tab.2.center/0.0.1366.768@0.0.1366.768" timestamp="1623186379624" />
+    <state width="1345" height="367" key="GridCell.Tab.2.left" timestamp="1623186379624">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1345" height="367" key="GridCell.Tab.2.left/0.0.1366.768@0.0.1366.768" timestamp="1623186379624" />
+    <state width="1345" height="367" key="GridCell.Tab.2.right" timestamp="1623186379624">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1345" height="367" key="GridCell.Tab.2.right/0.0.1366.768@0.0.1366.768" timestamp="1623186379624" />
+    <state x="184" y="26" key="SettingsEditor" timestamp="1623184357974">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="184" y="26" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1623184357974" />
+    <state x="369" y="100" width="627" height="568" key="find.popup" timestamp="1623185459032">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="369" y="100" width="627" height="568" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1623185459032" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
