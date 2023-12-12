@@ -9,6 +9,8 @@ function UserForm({onUserAdd}) {
 
         onUserAdd({name, email});
 
+        setName('');
+        setEmail('');
     }
 
     return <form onSubmit={handleSubmit}>
